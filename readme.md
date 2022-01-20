@@ -8,7 +8,16 @@
 - [x] Mockup in Balsamiq 
 - [x] Setup basic HTML pages of Balsamiq based pages
   - [index].html -> [dashboard { form, news}].html
-- [ ] Setup (CSS) TailwindCSS
+- [x] Setup (CSS) TailwindCSS
+  - [x] Setup TailwindCSS
+    - [x] installed with `yarn add`
+    - [x] change to `v2.2.19` in `package.json`, run `yarn`
+    - [x] added `postcss`
+    - [x] add `npx ..` to add tailwind config
+    - [x] add `css/tailwind.css` file with tail imports, https://tinyurl.com/y9drk4vu
+  - [x] Include Tailwind in our HTML
+    - [x] Run generation command
+    - [x] include generated file in HTML file
 - [ ] Code Login page
     - [ ] Add HTML page
     - [ ] Add Styles
