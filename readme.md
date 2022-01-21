@@ -21,11 +21,11 @@
 - [ ] Code Login page
     - [x] Add HTML page (HTML)
     - [x] Add Styles (CSS)
-    - [ ] Add logic (JS) ??
-      - [ ] a user can type in the proper email
-      - [ ] a iser can type in the password
-      - [ ] if either is empty, give user feedback
-      - [ ] if all is OK, send them to the dashboard
+    - [x] Add logic (JS) ??
+      - [x] a user can type in the proper email
+      - [x] a iser can type in the password
+      - [x] if either is empty, give user feedback
+      - [x] if all is OK, send them to the dashboard
 - [ ] Code Home page
    - [ ] Add HTML page
    - [ ] Add Styles (CSS)
