@@ -18,7 +18,7 @@
   - [x] Include Tailwind in our HTML
     - [x] Run generation command
     - [x] include generated file in HTML file
-- [ ] Code Login page
+- [x] Code Login page
     - [x] Add HTML page (HTML)
     - [x] Add Styles (CSS)
     - [x] Add logic (JS) ??
