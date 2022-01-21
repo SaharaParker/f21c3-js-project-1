@@ -19,9 +19,9 @@
     - [x] Run generation command
     - [x] include generated file in HTML file
 - [ ] Code Login page
-    - [ ] Add HTML page
-    - [ ] Add Styles
-    - [ ] Add logic (??)
+    - [x] Add HTML page (HTML)
+    - [x] Add Styles (CSS)
+    - [ ] Add logic (JS)
 - [ ] Code Home page
    - [ ] Add HTML page
    - [ ] Add Styles (CSS)
