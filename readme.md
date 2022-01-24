@@ -1,5 +1,5 @@
 ### Problem
-- [ ] A staff can login
+- [x] A staff can login
 - [ ] A staff can see lists of company news
 - [ ] A staff can add a new company news
 
@@ -7,7 +7,7 @@
 - [x] Setup project folders
 - [x] Mockup in Balsamiq 
 - [x] Setup basic HTML pages of Balsamiq based pages
-  - [index].html -> [dashboard { form, news}].html
+  - [index].html -> [dashboard { form, news}].shtml
 - [x] Setup (CSS) TailwindCSS
   - [x] Setup TailwindCSS
     - [x] installed with `yarn add`
@@ -27,9 +27,9 @@
       - [x] if either is empty, give user feedback
       - [x] if all is OK, send them to the dashboard
 - [ ] Code Dashboard
-  - [ ] Add HTML page (ref. mock-up)
-  - [ ] Add styles (Tail/CSS)
-  - [ ] Add business logic
+  - [x] Add HTML page (ref. mock-up)
+  - [x] Add styles (Tail/CSS)
+  - [ ] Add business logic (JS)
     - [ ] ??????
 - [ ] Test everything
 - [ ] Deploy to vercel

@@ -24,11 +24,7 @@ loginForm.addEventListener('submit', (evt) => {
 function checkIsNotEmpty(domInput, errorMessage) {
     showError.innerHTML = ""
     if (domInput.value === "") {
-        // show an error
-        // console.log(errorMessage);
 
-        // create and append to the "show-error" div in the HTML
-        //   ....on the fly
         const div = document.createElement('div');
         div.innerHTML = `<p class="bg-red-400 text-white p-2"> ${errorMessage}</p>`;
 

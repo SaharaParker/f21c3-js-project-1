@@ -5,8 +5,65 @@
     <title>JS - Login</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
 
-    <h1 class="text-4xl">Dashboard - HTML</h1>
+<body class="bg-red-100">
+
+<div class="bg-red-200 flex h-screen">
+
+    <!-- add news -->
+    <div class="w-1/2 p-16 bg-red-200 space-y-3">
+        <h1 class="text-4xl">Company News Portal</h1>
+
+        <hr>
+        <!-- Add news section -->
+        <div id="news-add" class="p-6">
+            <form id="news-form">
+                <div class="mb-3">
+                    <input type="text" name="news-submitted-by" id="news-submitted-by"
+                           placeholder="Enter your name"
+                           class="w-full px-3 py-2 outline-none">
+                </div>
+
+                <div class="mb-3">
+            <textarea name="news-content" id="news-content" cols="30" rows="10"
+                      class="w-full px-3 py-2 outline-none"
+            >
+
+            </textarea>
+                </div>
+
+
+                <input type="submit" value="+ Add News"
+                       class="px-3 py-2 w-full bg-green-200 ">
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Show news content -->
+    <div id="news-show" class="w-1/2 p-16  bg-red-300">
+
+        <div class="pb-3 border-b-2 border-gray-500 ">
+            <h3>John Doe</h3>
+            <p class="text-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa delectus facilis
+                numquam!</p>
+        </div>
+
+        <div class="pb-3 border-b-2 border-gray-500 ">
+            <h3>Mary Doe</h3>
+            <p class="text-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa delectus facilis
+                numquam!</p>
+        </div>
+
+        <div class="pb-3 border-b-2 border-gray-500 ">
+            <h3>Annete Doe</h3>
+            <p class="text-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa delectus facilis
+                numquam!</p>
+        </div>
+
+    </div>
+</div>
+
+
 </body>
 </html>
