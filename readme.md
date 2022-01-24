@@ -23,17 +23,14 @@
     - [x] Add Styles (CSS)
     - [x] Add logic (JS) ??
       - [x] a user can type in the proper email
-      - [x] a iser can type in the password
+      - [x] a user can type in the password
       - [x] if either is empty, give user feedback
       - [x] if all is OK, send them to the dashboard
-- [ ] Code Home page
-   - [ ] Add HTML page
-   - [ ] Add Styles (CSS)
-   - [ ] Add logic (JS)
-- [ ] Code XXXX page
-    - [ ] Add HTML page
-    - [ ] Add Styles (CSS)
-    - [ ] Add logic (JS)
+- [ ] Code Dashboard
+  - [ ] Add HTML page (ref. mock-up)
+  - [ ] Add styles (Tail/CSS)
+  - [ ] Add business logic
+    - [ ] ??????
 - [ ] Test everything
 - [ ] Deploy to vercel
 - [ ] Cleanup Readme file
