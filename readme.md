@@ -30,7 +30,9 @@
   - [x] Add HTML page (ref. mock-up)
   - [x] Add styles (Tail/CSS)
   - [ ] Add business logic (JS)
-    - [ ] ??????
+    - [ ] **A staff can see lists of company news**
+      - [ ] user logs in, see previous news as their starting point
+  - [ ] ??????
 - [ ] Test everything
 - [ ] Deploy to vercel
 - [ ] Cleanup Readme file
