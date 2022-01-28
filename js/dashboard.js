@@ -12,7 +12,7 @@ let allNews = [{
     content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa delectus facilis numquam!"
 }
 ];
-const newsShow = document.getElementById('news-show');
+const newsShowEl = document.getElementById('news-show');
 const newsForm = document.getElementById('news-form');
 
 displayAllNews(allNews);
@@ -32,37 +32,32 @@ newsForm.addEventListener('submit', (event) => {
         content: document.getElementById('news-content').value
     };
 
-
-    // console.log(allNews);
-    // console.log(newNews);
-
     allNews = [...allNews, newNews]; //spread
 
-    displayAllNews(allNews)
-    // console.log(allNews);
+    displayAllNews(allNews);
 
-    // news-content
-
-    // console.log('you clicked an event');
 });
 
 // -- loop to show all news items
 
 function displayAllNews(items) {
-    newsShow.innerHTML = ""
+    newsShowEl.innerHTML = "";
 
-    for (const key in items) {
-        const newsCardDiv = document.createElement('div');
+    items.forEach(
+        item => addNewCard(item, newsShowEl) //anonymous functions
+    );
+}
 
-        newsCardDiv.innerHTML = `
+function addNewCard(item, displayEl) {
+    const newsCardDiv = document.createElement('div');
+
+    newsCardDiv.innerHTML = `
           <div class="pb-3 border-b-2 border-gray-500 ">
-           <h3> ${items[key].fullName} </h3>
-            <h5 class="text-xs text-gray-600"> ${items[key].date} </h5>
-            <p class="text-xs"> ${items[key].content} </p>
+           <h3> ${item.fullName} </h3>
+            <h5 class="text-xs text-gray-600"> ${item.date} </h5>
+            <p class="text-xs"> ${item.content} </p>
         </div>
     `;
 
-        newsShow.appendChild(newsCardDiv);
-    }
-
+    displayEl.appendChild(newsCardDiv);
 }
