@@ -88,14 +88,14 @@ function addNewCard(item, displayEl) {
 document
     .getElementById('news-filter')
     .addEventListener('input',(event) => {
-        console.log(event.target.value.toLowerCase)
+        console.log(event.target.value)
 
-        const personName = event.target.value.toLowerCase();
+        const personName = event.target.value
         const filteredNews = newsFromBackendDataStore.filter(item => {
-            return item.fullName.toLowerCase === personName;
+            return item.fullName === personName;
         })
-        const filteredNewsPart = newsFromBackendDataStore.toLowerCase.filter(item => {
-            return item.fullName.toLowerCase.includes(personName)
+        const filteredNewsPart = newsFromBackendDataStore.filter(item => {
+            return item.fullName.includes(personName);
         });
 
         displayAllNews(filteredNewsPart)
