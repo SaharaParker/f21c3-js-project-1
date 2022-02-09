@@ -86,3 +86,9 @@ function addNewCard(item, displayEl) {
 
     displayEl.appendChild(newsCardDiv);
 }
+
+const newsFilter = document.getElementById('news-filter');
+    newsFilter.addEventListener('input', (event) => {
+
+    });
+
