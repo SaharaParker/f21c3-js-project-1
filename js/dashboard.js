@@ -51,7 +51,7 @@ function displayAllNews(items) {
     );
 }
 
-function deleteNews(newsId) {
+function deleteNews(filteredNews) {
 
     // console.log(`you clicked news ID: ${newsId}`)
 
@@ -97,8 +97,6 @@ document
         const filteredNewsPart = newsFromBackendDataStore.filter(item => {
             return item.fullName.includes(personName);
         });
-
-        // newsFromBackendDataStore = filteredNews
 
         displayAllNews(filteredNewsPart)
 
