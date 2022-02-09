@@ -89,13 +89,19 @@ document
     .getElementById('news-filter')
     .addEventListener('input',(event) => {
         console.log(event.target.value)
+
         const personName = event.target.value
-        const filteredNews = newsFromBackendDataStore.filter(item => item.fullName === personName)
+        const filteredNews = newsFromBackendDataStore.filter(item => {
+            return item.fullName === personName;
+        })
+        const filteredNewsPart = newsFromBackendDataStore.filter(item => {
+            return item.fullName.includes(personName);
+        });
 
         // newsFromBackendDataStore = filteredNews
 
-        displayAllNews(filteredNews)
+        displayAllNews(filteredNewsPart)
 
-        console.log(filteredNews)
+        console.log(filteredNewsPart)
     });
 
