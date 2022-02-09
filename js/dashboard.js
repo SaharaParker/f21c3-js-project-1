@@ -57,8 +57,6 @@ function deleteNews(newsId) {
 
     // console.log(newsFromBackendDataStore)
 
-    const filteredNews = newsFromBackendDataStore.filter(item => item.id !== newsId)
-
     // store the new filter news.... storeNews(filterNews)
     newsFromBackendDataStore = filteredNews
 
@@ -88,5 +86,16 @@ function addNewCard(item, displayEl) {
 }
 
 document
-    .getElementById('news-filter');
+    .getElementById('news-filter')
+    .addEventListener('input',(event) => {
+        console.log(event.target.value)
+        const personName = event.target.value
+        const filteredNews = newsFromBackendDataStore.filter(item => item.fullName === personName)
+
+        // newsFromBackendDataStore = filteredNews
+
+        displayAllNews(filteredNews)
+
+        console.log(filteredNews)
+    });
 
